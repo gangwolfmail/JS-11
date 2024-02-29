@@ -65,7 +65,7 @@ function markupTeam() {
       <p class = "team-position">3 </p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Vlad Kravchenko</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
       <p class = "team-position">Developed 4</p>
       </li>
       <li class = "team-item">
