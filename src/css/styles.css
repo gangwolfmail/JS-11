@@ -6,7 +6,12 @@
 */
 @import url('./reset.css');
 
+body.dark {
+  --icon-fill-color: #fff;
+}
+
 :root {
+  --icon-fill-color: #000;
   --brand-color: #4f2ee8;
   --accent-color: #eac645;
   --text-color: #111;
