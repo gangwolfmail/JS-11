@@ -32,45 +32,45 @@ function markupTeam() {
       <button class="modal-close-btn" type="button" aria-label="close">
         <img class="modal-close-svg" src="${iconClose}" alt="" width="24" height="24" loading="lazy"/>
       </button>
-       <h2 class = "title-team">Team <span class = "title-shark">JS Sharks</span></h2>
+       <h2 class = "title-team">Team <span class = "title-shark">JS 11</span></h2>
       <ul class="list team-list">
       <li class = "team-item">
-      <h3 class = "team-name">Oleh Luzhniak</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
       <p class = "team-position">Team leader, developed authorization feature</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Anna Matsarska</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
 
-      <p class = "team-position">Scrum master, developed API connection, "Scroll Up" button, styles of shopping list page</p>
+      <p class = "team-position">Scrum master, developed</p>
 
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Anna Boichuk</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
       <p class = "team-position">Developed dark theme feature, footer, modal 'Our team'</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Bohdana Taraskina</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
       <p class = "team-position">Developed cards for books for each category</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Illia Osipov</h3>
-      <p class = "team-position">Developed header</p>
+      <h3 class = "team-name">FirstName LastName</h3>
+      <p class = "team-position">1</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Viktoria Lytvyn</h3>
-      <p class = "team-position">Developed funds, mobile menu and header</p>
+      <h3 class = "team-name">FirstName LastName</h3>
+      <p class = "team-position">Developed 2</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Vitalii Lisnychenko</h3>
-      <p class = "team-position">Developed modal for book preview, modal for authorization </p>
+      <h3 class = "team-name">FirstName LastName</h3>
+      <p class = "team-position">3 </p>
       </li>
       <li class = "team-item">
       <h3 class = "team-name">Vlad Kravchenko</h3>
-      <p class = "team-position">Developed section All Categories, Scrollbar menu (added dark theme styles)</p>
+      <p class = "team-position">Developed 4</p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Yaroslav Dovgan</h3>
-      <p class = "team-position">Developed pagination</p>
+      <h3 class = "team-name">FirstName LastName</h3>
+      <p class = "team-position">Developed 5</p>
       </li>
       </ul>
     </section>
