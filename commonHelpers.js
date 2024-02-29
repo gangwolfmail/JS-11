@@ -36,7 +36,7 @@ import{b as m}from"./assets/vendor-9b35bc79.js";(function(){const a=document.cre
       <p class = "team-position">3 </p>
       </li>
       <li class = "team-item">
-      <h3 class = "team-name">Vlad Kravchenko</h3>
+      <h3 class = "team-name">FirstName LastName</h3>
       <p class = "team-position">Developed 4</p>
       </li>
       <li class = "team-item">
