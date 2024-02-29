@@ -30,9 +30,10 @@ function markupTeam() {
   instanceEl.innerHTML = `<div class="modal modal-our-team container">
     <section class="our-team">
       <button class="modal-close-btn" type="button" aria-label="close">
+      
         <img class="modal-close-svg" src="${iconClose}" alt="" width="24" height="24" loading="lazy"/>
       </button>
-       <h2 class = "title-team">Team <span class = "title-shark">JS 11</span></h2>
+       <h2 class = "title-team">Team <span class = "title-11">JS 11</span></h2>
       <ul class="list team-list">
       <li class = "team-item">
       <h3 class = "team-name">FirstName LastName</h3>

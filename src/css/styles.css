@@ -1819,9 +1819,9 @@ html {
 
 .modal {
   width: 312px;
-  border: 1px solid var(--black-color);
+  border: 1px solid black;
   border-radius: 18px;
-  background-color: var(--white-color);
+  background-color: white;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 18px;
@@ -1902,7 +1902,8 @@ html {
   width: 70%;
   height: 260px;
   border: 1px solid;
-  border-color: rgba($color: #171717, $alpha: 0.5);
+  border-color: rgba(23, 23, 23, 0.5);
+
   border-radius: 8px;
   margin-bottom: 14px;
 
@@ -1994,9 +1995,8 @@ html {
   letter-spacing: -0.14px;
   text-transform: uppercase;
   border: 2px solid transparent;
-  color: var(--black-color);
-  border-color: var(--violet-color);
-
+  color: black;
+  border-color: violet;
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
@@ -2028,8 +2028,8 @@ html {
 .add-to-shoping-list:hover,
 .add-to-shoping-list:focus {
   @media only screen and (min-width: 1440px) {
-    background-color: var(--violet-color);
-    color: var(--white-color);
+    background-color: violet;
+    color: white;
   }
 }
 
@@ -2042,7 +2042,7 @@ html {
   width: 242px;
   margin-top: 7px;
   letter-spacing: -0.04em;
-  color: rgba($color: #171717, $alpha: 0.5);
+  border-color: rgba(23, 23, 23, 0.5);
 
   @media only screen and (min-width: 375px) {
     margin-top: 8px;
