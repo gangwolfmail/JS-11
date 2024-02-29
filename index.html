@@ -10,9 +10,9 @@
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
     />
     
-    <script type="module" crossorigin src="/JS-11/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/JS-11/assets/vendor-9b35bc79.js">
-    <link rel="stylesheet" href="/JS-11/assets/index-1be20358.css">
+    <script type="module" crossorigin src="/JS-11/assets/vendor-9b35bc79.js"></script>
+    <script type="module" crossorigin src="/JS-11/assets/main-59493b16.js"></script>
+    <link rel="stylesheet" href="/JS-11/assets/main-77a45ab0.css">
   </head>
   <body>
     <!-- ** ================HEADER========================================== -->
@@ -21,7 +21,7 @@
       <div class="header-container">
         <a href="./index.html" class="header-logo-link"
           ><svg class="header-logo">
-            <use href="/JS-11/assets/icons-62b1adf4.svg#icon-logo"></use></svg
+            <use href="/JS-11/assets/icons-88884d1e.svg#icon-logo"></use></svg
           >Bookshelf</a
         >
         <nav class="navigation">
@@ -32,7 +32,7 @@
             <li class="site-nav__item shop-page-link">
               <a href="./shop-list.html" class="site-nav__link">
                 Shopping list<svg class="site-nav__logo">
-                  <use href="/JS-11/assets/icons-62b1adf4.svg#icon-basket"></use>
+                  <use href="/JS-11/assets/icons-88884d1e.svg#icon-basket"></use>
                 </svg>
               </a>
             </li>
@@ -48,14 +48,18 @@
           data-modal-open
           aria-label="sign in"
         >
-          <span class="sign-up-button_text">Sign up</span>
+          <span class="sign-up-button_text"
+            >Sign up
+            <svg class="header-registr-icon" width="20" height="20">
+              <use href="/src/img/icons.svg#icon-arrow-narrow-right"></use></svg
+          ></span>
           <svg class="sign-up-button_icon" width="20" height="20">
-            <use href="/JS-11/assets/icons-62b1adf4.svg#icon-log-in-out-arrow-right"></use>
+            <use href="/JS-11/assets/icons-88884d1e.svg#icon-log-in-out-arrow-right"></use>
           </svg>
         </button>
         <button type="button" class="burger-menu">
           <svg class="burger-menu__icon">
-            <use href="/JS-11/assets/icons-62b1adf4.svg#icon-burger-menu"></use>
+            <use href="/JS-11/assets/icons-88884d1e.svg#icon-burger-menu"></use>
           </svg>
         </button>
         <ul class="user-bar js-user-bar visually-hidden">
@@ -66,12 +70,12 @@
               aria-label="user bar button"
             >
               <svg class="user-bar-button-icon" width="37" height="37">
-                <use href="/JS-11/assets/icons-62b1adf4.svg#icon-logo"></use>
+                <use href="/JS-11/assets/icons-88884d1e.svg#icon-logo"></use>
                 icon-unknown
               </svg>
               <span class="user-bar-button-text"></span>
               <svg class="user-bar-button-arrow-icon" width="23" height="26">
-                <use href="/JS-11/assets/icons-62b1adf4.svg#icon-logined-caret-down"></use>
+                <use href="/JS-11/assets/icons-88884d1e.svg#icon-logined-caret-down"></use>
               </svg>
             </button>
             <ul class="dropdown">
@@ -83,7 +87,7 @@
                 >
                   <span class="log-out-button-text">Log out</span>
                   <svg class="log-out-button-icon" width="20" height="20">
-                    <use href="/JS-11/assets/icons-62b1adf4.svg#icon-logined-caret-down"></use>
+                    <use href="/JS-11/assets/icons-88884d1e.svg#icon-logined-caret-down"></use>
                   </svg>
                 </button>
               </li>
@@ -96,7 +100,7 @@
           <div class="mobile-menu__header">
             <a href="/src/index.html" class="header-logo-link"
               ><svg class="header-logo">
-                <use href="/JS-11/assets/icons-62b1adf4.svg#icon-logo"></use></svg
+                <use href="/JS-11/assets/icons-88884d1e.svg#icon-logo"></use></svg
               >Bookshelf</a
             >
             <label class="toggle-theme common-toggle">
@@ -105,7 +109,7 @@
             </label>
             <button type="button" class="mobile-menu__button">
               <svg class="mobile-menu__icon">
-                <use href="/JS-11/assets/icons-62b1adf4.svg#icon-close"></use>
+                <use href="/JS-11/assets/icons-88884d1e.svg#icon-close"></use>
               </svg>
             </button>
           </div>
@@ -117,7 +121,7 @@
           >
             <span class="sign-up-button_text">Sign up</span>
             <svg class="sign-up-button_icon" width="20" height="20">
-              <use href="/JS-11/assets/icons-62b1adf4.svg#golder-arrow-right"></use>
+              <use href="/JS-11/assets/icons-88884d1e.svg#golder-arrow-right"></use>
             </svg>
           </button>
           <nav class="navigation-burger">
@@ -128,7 +132,7 @@
               <li class="site-nav__item">
                 <a href="./shopping-list.html" class="site-nav__link"
                   >SHOPPING LIST<svg class="site-nav__logo">
-                    <use href="/JS-11/assets/icons-62b1adf4.svg#icon-uil_cart"></use>
+                    <use href="/JS-11/assets/icons-88884d1e.svg#icon-uil_cart"></use>
                   </svg>
                 </a>
               </li>
@@ -142,7 +146,7 @@
           >
             <span class="log-out-button_text">Log out</span>
             <svg class="log-out-button_icon" width="20" height="20">
-              <use href="/JS-11/assets/icons-62b1adf4.svg#golder-arrow-right"></use>
+              <use href="/JS-11/assets/icons-88884d1e.svg#golder-arrow-right"></use>
             </svg>
           </button>
         </div>
@@ -160,6 +164,9 @@
                 <li class="categories-list">
                   <a class="category-link active" href="#">All categories</a>
                 </li>
+                <li class="categories-list">
+                  <a class="category-link" href="#">Назва</a>
+                </li>
               </ul>
             </div>
 
@@ -169,7 +176,7 @@
               <div class="support-title">
                 <span class="support-paragraph">Support Ukraine</span>
                 <svg class="ukraine-emblem" width="20" height="32">
-                  <use href="/JS-11/assets/icons-62b1adf4.svg#icon-support-title-symbol"></use>
+                  <use href="/JS-11/assets/icons-88884d1e.svg#icon-support-title-symbol"></use>
                 </svg>
               </div>
               <div class="funds-container">
@@ -185,7 +192,7 @@
               <svg width="64" height="64">
                 <use
                   class="scroll-up-arrow"
-                  href="/JS-11/assets/icons-62b1adf4.svg#icon-scroll-up"
+                  href="/JS-11/assets/icons-88884d1e.svg#icon-scroll-up"
                 ></use>
               </svg>
             </div>
@@ -203,7 +210,7 @@
           <svg class="start-close-btn-svg" width="28" height="28">
             <use
               class="start-close-icon"
-              href="/JS-11/assets/icons-62b1adf4.svg#icon-x-close"
+              href="/JS-11/assets/icons-88884d1e.svg#icon-x-close"
             ></use>
           </svg>
         </button>
@@ -224,7 +231,7 @@
               placeholder="EMAIL"
             />
             <svg class="input-icon" width="28" height="28">
-              <use href="/JS-11/assets/icons-62b1adf4.svg#icon-mail"></use>
+              <use href="/JS-11/assets/icons-88884d1e.svg#icon-mail"></use>
             </svg>
           </div>
           <div class="start-modal-intup-el">
@@ -235,7 +242,7 @@
               placeholder="PASSWORD"
             />
             <svg class="input-icon" width="28" height="28">
-              <use href="/JS-11/assets/icons-62b1adf4.svg#icon-lock"></use>
+              <use href="/JS-11/assets/icons-88884d1e.svg#icon-lock"></use>
             </svg>
           </div>
 
@@ -259,7 +266,7 @@
           data-modal-close
         >
           <svg class="close-icon" width="28" height="28" stroke="var(--border)">
-            <use href="/JS-11/assets/icons-62b1adf4.svg#icon-x-close"></use>
+            <use href="/JS-11/assets/icons-88884d1e.svg#icon-x-close"></use>
           </svg>
         </button>
 
