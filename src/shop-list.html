@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="shop-list-header">
+      <load src="./index.html" />
+    </header>
+    <main>
+      <section class="shop-list-section">
+        <div class="container">
+          <!-- <div class="list">
+            <load src="/src/index.html" />
+          </div> -->
+
+          <div class="shopping-list">
+            <h1 class="shop-list-title">
+              Shopping <span class="shop-list-span">List</span>
+            </h1>
+            <div class="shop-list-empty is-hidden">
+              <p class="shop-list-empty-message">
+                This page is empty, add some books and proceed to order.
+              </p>
+              <picture class="shop-list-empty-img">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/shopping-list/empty-basket_desktop_tab@1x.avif 1x,
+                    ./img/shopping-list/empty-basket_desktop_tab@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/shopping-list/empty-basket_desktop_tab@1x.png 1x,
+                    ./img/shopping-list/empty-basket_desktop_tab@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/shopping-list/empty-basket_mob@1x.avif 1x,
+                    ./img/shopping-list/empty-basket_mob@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/shopping-list/empty-basket_mob@1x.png 1x,
+                    ./img/shopping-list/empty-basket_mob@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="shop-list-empty-img"
+                  src="./img/shopping-list/empty-basket_mob@1x.png"
+                  alt="Books image"
+                  width="265"
+                  height="198"
+                />
+              </picture>
+            </div>
+            <ul class="shop-list card-list shop-list-js">
+              <!-- <li class="card-item js-card" data-id="${_id}">
+                <img
+                  class="card-img"
+                  src="${book_image}"
+                  onerror="this.src='${iconsSvg}#icon-cork-book'"
+                  alt="Book's image"
+                  width="100"
+                  height="142"
+                />
+                <div class="card-content">
+                  <h2 class="card-title">Заголовок</h2>
+                  <p class="card-genre">Назва листа</p>
+                  <p class="card-description">Опис</p>
+                  <div class="card-footer">
+                    <p class="card-author">Автор</p>
+                    <ul class="card-shops">
+                      <li class="shop-item">
+                        <a
+                          href="${
+              buy_links[0].url
+            }"
+                          target="_blank"
+                          rel="noopener nofollow"
+                        >
+                          <img
+                            class="amazon-img"
+                            src="${amazonIcon}"
+                            alt="Amazon"
+                            width="32"
+                            height="11"
+                          />
+                        </a>
+                      </li>
+                      <li class="shop-item-apple">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <img
+                            class="apple-img"
+                            src="${appleIcon}"
+                            alt="Apple Book"
+                            width="16"
+                            height="16"
+                          />
+                        </a>
+                      </li>
+                      <li class="shop-item-bookshop">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <img
+                            class="bookshop-img"
+                            src="${bookshopIcon}"
+                            alt="Bookshop"
+                            width="16"
+                            height="16"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="card-delete-btn" type="button">
+                    <svg class="delete-icon" width="28" height="28">
+                      <use href="${iconsSvg}#icon-trash"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li> -->
+            </ul>
+            <div id="pagination" class="tui-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="start-backdrop is-hidden">
+      <load src="./index.html" />
+    </div>
+  </body>
+</html>
