@@ -3,16 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Bookshelf</title>
-
-    <meta
-      name="description"
-      content="Online book store with the best prices in Ukraine."
-    />
-    <meta
-      name="keywords"
-      content="book, shop, bookshelf, online, store, best, prices, ukraine"
-    />
+    <title>Shopping list - Bookshelf</title>
 
     <link
       rel="stylesheet"
@@ -26,15 +17,17 @@
     <include src="./partials/header.html"></include>
     <main class="main">
       <div class="container main-wrapper">
-        <div class="sidebar">
-          <include src="./partials/categoryes.html"></include>
+        <div class="sidebar sidebar-shopping-list">
           <include src="./partials/funds.html"></include>
         </div>
-        <include src="./partials/cards.html"></include>
+        <div>
+          <include src="./partials/shoping-list.html"></include>
+          <include src="./partials/pagination.html"></include>
+          <include src="./partials/scroll-up.html"></include>
+        </div>
       </div>
-      <include src="./partials/scroll-up.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./list.js"></script>
   </body>
 </html>

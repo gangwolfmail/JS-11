@@ -1,0 +1,134 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --black-color: #000;
+  --black-light-color: #202024;
+  --black-pagination-color: #111111;
+  --grey-color: #b4afaf;
+  --white-color: #fff;
+  --violet-color: #4f2ee8;
+  --yellow-color: #eac645;
+  --scroll-color: #e0e0e0;
+  --transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.02em;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  min-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;  
+
+  @media only screen and (min-width: 375px) {
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.test-modal {
+  display: block;
+  margin: 0 auto;
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 17px;
+  background-color: var(--violet-color);
+  z-index: 99;
+  border: none;
+  box-shadow: 0 0 0 5px rgba(79, 46, 232, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+
+.scroll-to-top:hover {
+  opacity: 0.85;
+}
+
+.general-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+  letter-spacing: -1.28px;
+  color: var(--black-color);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1;
+  }
+}
+
+.violet {
+  color: var(--violet-color);
+}

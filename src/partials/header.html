@@ -1,0 +1,69 @@
+<header class="header open">
+  <div class="header-container container">
+    <div>
+      <div class="part-one">
+        <a class="logo link" href="./index.html">
+          <svg class="header__logo-name" width="24" height="24">
+            <use href="/src/images/icons.svg#icon-logo-no-text"></use>
+          </svg>
+          Bookshelf
+        </a>
+
+        <ul class="menu list">
+          <li class="menu-item js-index_menu">
+            <a class="menu-link link" href="./index.html">Home</a>
+          </li>
+          <li class="menu-item js-list_menu">
+            <a class="menu-link link" href="./list.html">
+              Shoping list
+              <svg width="16" height="16" class="icon-shoping-list">
+                <use href="/src/images/icons.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-right">
+      <label class="switch" aria-label="dark-theme">
+        <input class="theme js-theme" type="checkbox" />
+        <span class="switch-slider"></span>
+      </label>
+      <div class="part-two">
+        <button class="mobile log-desc-tab js-auth-btn">
+          <svg class="user-icon" width="37" height="37">
+            <use href="/src/images/icon-user.svg#icon-user"></use>
+          </svg>
+          <span class="js-display-name">Name</span>
+          <svg class="header__registr-icon" width="20" height="20">
+            <use href="/src/images/icons.svg#icon-user-arrow-down"></use>
+          </svg>
+        </button>
+
+        <button class="signin-btn js-signin-btn">
+          Sign up
+          <svg class="header__registr-icon" width="20" height="20">
+            <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+
+        <button class="log-out js-logout-btn visually-hidden">
+          Log out
+          <svg class="header__unregistr-icon" width="20" height="20">
+            <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <button
+      class="header__toggle js-open-menu"
+      aria-expanded="false"
+      aria-label="mobile-menu"
+    >
+      <svg class="" width="28" height="28">
+        <use href="/src/images/icons.svg#icon-align-left"></use>
+      </svg>
+    </button>
+  </div>
+  <include src="./partials/mobile-menu.html"></include>
+</header>

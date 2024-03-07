@@ -1,64 +1,94 @@
-const checkbox = document.querySelector('input[type="checkbox"]');
-const headBtn = document.querySelector('.sign-up-button');
+const STORAGE_KEY = "saved-theme"
 
-const refs = {
-  startBackdrop: document.querySelector('.start-backdrop'),
-  startCloseBtn: document.querySelector('.start-close-btn'),
-  form: document.querySelector('.start-form'),
-};
 
-const LOCAL_KEY = 'form-data';
-let inputData = {};
-
-function openStarModal() {
-  refs.startBackdrop.classList.remove('start-hidden');
-  document.body.classList.add('scroll-lock');
+const body = document.querySelector('body')
+const header = {
+ switcher: document.querySelector('.theme'),
+ switcherMobile: document.querySelector('.theme-mobile')
 }
 
-function onCloseBtn() {
-  refs.startBackdrop.classList.add('start-hidden');
-  document.body.classList.remove('scroll-lock');
-}
+/**
+  |============================
+  | збереження останньої теми
+  |============================
+*/
+currentTheme()
 
-function onFormSub(event) {
-  event.preventDefault();
-  const { name, email, password } = event.currentTarget.elements;
-  inputData.name = name.value;
-  inputData.email = email.value;
-  inputData.password = password.value;
-  localStorage.setItem(LOCAL_KEY, JSON.stringify(inputData));
-  event.currentTarget.reset();
-  refs.startBackdrop.classList.add('start-hidden');
-}
-
-function onEscClose(e) {
-  if (e.code !== 'Escape') {
-    return;
-  } else {
-    refs.startBackdrop.classList.add('start-hidden');
-    document.body.classList.remove('scroll-lock');
+function currentTheme(){
+  const item = localStorage.getItem(STORAGE_KEY)
+  const parsedItem = JSON.parse(item)
+  if (parsedItem === null) {
+    header.switcherMobile.checked = false
+    header.switcher.checked = false
   }
-}
-
-refs.startCloseBtn.addEventListener('click', onCloseBtn);
-refs.form.addEventListener('submit', onFormSub);
-window.addEventListener(`keydown`, onEscClose);
-
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  document.body.classList.add(savedTheme);
-  checkbox.checked = savedTheme === 'dark';
-}
-
-function changeTheme() {
-  if (checkbox.checked) {
-    document.body.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.body.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
+  else{
+    header.switcher.checked = true
+    header.switcherMobile.checked = true
+    onDark() 
   }
+
+}
+function savedTheme(){
+const data = {}
+if(header.switcher.checked || header.switcherMobile.checked){
+  data.theme = 'dark';
+} 
+localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
 }
 
-checkbox.addEventListener('change', changeTheme);
-headBtn.addEventListener('click', openStarModal);
+/**
+  |============================
+  | очистка стилів
+  |============================
+*/
+
+function onLigth() {
+    body.classList.remove('body-dark');
+
+}
+  
+/**
+  |============================
+  | додавання стилів темної теми
+  |============================
+*/
+  function onDark(e){
+    savedTheme()
+      body.classList.add('body-dark');
+      
+    }
+    
+    /**
+      |============================
+      | слухачі
+      |============================
+    */
+
+ function toggle(){
+  if(header.switcher.checked){
+    onDark()
+    header.switcherMobile.checked = true
+  } 
+  else{
+    localStorage.removeItem("saved-theme")
+    onLigth()
+    header.switcherMobile.checked = false
+  }
+ }
+
+ function toggleMobile(){
+
+  if(header.switcherMobile.checked){
+    onDark()
+    header.switcher.checked = true
+  } 
+  else{
+    localStorage.removeItem("saved-theme")
+    onLigth()
+    header.switcher.checked = false
+    
+  }
+ }
+
+  header.switcher.addEventListener('change', toggle)
+  header.switcherMobile.addEventListener('change', toggleMobile)
